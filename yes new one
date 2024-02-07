@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>para kay crush</title>
+</head>
+<body>
+    <style>
+        body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          margin: 0;
+        }
+        button {
+          margin: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>WILL YOU GIVE ME A KISS ON VALENTINES DAY???</h1>
+      <button onclick="showPicture()">Yes</button>
+      <button id="<link>noButton</link>" onclick="moveButton()">No</button>
+      <div id="pictureContainer"></div>
+    
+      <script>
+        function showPicture() {
+          var pictureContainer = document.getElementById('pictureContainer');
+          pictureContainer.innerHTML = '<img src="https://i.pinimg.com/originals/bc/a4/c2/bca4c235c5246737e5fd8a24fac5a787.gif" alt="Picture">';
+        }
+    
+        function moveButton() {
+          var button = document.getElementById('<link>noButton</link>');
+          var newX = Math.floor(Math.random() * (window.innerWidth - button.offsetWidth));
+          var newY = Math.floor(Math.random() * (window.innerHeight - button.offsetHeight));
+          button.style.position = 'absolute';
+          button.style.left = newX + 'px';
+          button.style.top = newY + 'px';
+        }
+      </script>
+      <style>
+        body {
+          background-image: url('https://t3.ftcdn.net/jpg/02/94/45/92/360_F_294459225_deOinf0uW2Ci6osQzwJAX9j67sIZvTwP.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+</body>
+</html>
